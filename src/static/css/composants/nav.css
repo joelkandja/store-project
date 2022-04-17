@@ -1,0 +1,28 @@
+.navbar {
+  padding: 15px 30px;
+  background: white;
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-logo {
+  height: 50px;
+}
+.navbar-right {
+  flex: 0 0 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .dropdown-toggle {
+  font-size: 20px;
+}
+.navbar a {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}

@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}{% endblock title %}
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container container">
+            <img src="" alt="Logo" class="navbar-logo">
+            <div class="navbar-right hidden-xs">
+                <a href="">Accueil</a>
+                <a href="">Contact</a>
+                <div class="dropdown">
+                    <img src="http://placehold.it/50x50" alt="" class="avatar dropdown-toggle" id="profile-dropdown"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <ul class="dropdown-menu" aria-labelledby="profile-dropdown">
+                        <li><a href="#">Categories 1</a></li>
+                        <li><a href="#">Categories 2</a></li>
+                    </ul>
+                </div>
+                <a href="" class="btn-medium">Login</a>
+
+            </div>
+            <div class="dropdown visible-xs">
+                <i class="fa fa-bars dropdown-toggle" id="menu-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="true"></i>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="menu-dropdown">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="btn-medium">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    {% block content %}
+
+    {% endblock content%}
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
